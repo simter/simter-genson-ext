@@ -4,16 +4,14 @@
   <parent>
     <groupId>tech.simter</groupId>
     <artifactId>simter-parent</artifactId>
-    <version>0.2-SNAPSHOT</version>
+    <version>0.3-SNAPSHOT</version>
+    <relativePath></relativePath>
   </parent>
   <artifactId>simter-genson-ext</artifactId>
-  <version>0.1-SNAPSHOT</version>
   <packaging>jar</packaging>
-
   <name>simter-genson-ext</name>
   <description>Simter Genson Extension For Java8 DataTime</description>
   <url>https://github.com/simter/simter-genson-ext</url>
-
   <licenses>
     <license>
       <name>MIT</name>
@@ -21,11 +19,9 @@
       <distribution>repo</distribution>
     </license>
   </licenses>
-
   <scm>
     <url>https://github.com/simter/simter-genson-ext.git</url>
   </scm>
-
   <organization>
     <name>simter</name>
     <url>https://github.com/simter</url>
@@ -40,14 +36,12 @@
     <system>GitHub</system>
     <url>https://github.com/simter/simter-genson-ext/issues</url>
   </issueManagement>
-
   <dependencies>
     <dependency>
       <groupId>junit</groupId>
       <artifactId>junit</artifactId>
       <scope>test</scope>
     </dependency>
-
     <dependency>
       <groupId>com.owlike</groupId>
       <artifactId>genson</artifactId>
