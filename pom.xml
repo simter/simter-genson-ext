@@ -38,6 +38,11 @@
   </issueManagement>
   <dependencies>
     <dependency>
+      <groupId>tech.simter</groupId>
+      <artifactId>simter-core</artifactId>
+      <optional>true</optional>
+    </dependency>
+    <dependency>
       <groupId>junit</groupId>
       <artifactId>junit</artifactId>
       <scope>test</scope>
