@@ -5,6 +5,8 @@ import com.owlike.genson.Factory;
 import com.owlike.genson.Genson;
 import tech.simter.data.Page;
 
+import javax.inject.Named;
+import javax.inject.Singleton;
 import java.lang.reflect.Type;
 
 /**
@@ -12,9 +14,15 @@ import java.lang.reflect.Type;
  *
  * @author RJ
  */
+@Named
+@Singleton
 public class PageConverterFactory implements Factory<Converter<Page>> {
+
+  private PageConverter pageConverter;
+
   @Override
   public Converter<Page> create(Type type, Genson genson) {
-    return new PageConverter();
+    if (pageConverter == null) pageConverter = new PageConverter();
+    return pageConverter;
   }
 }
