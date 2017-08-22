@@ -36,6 +36,7 @@ public class OffsetTimeConverter implements Converter<OffsetTime> {
 
   @Override
   public OffsetTime deserialize(ObjectReader reader, Context ctx) throws Exception {
-    return OffsetTime.parse(reader.valueAsString(), formatter);
+    String text = reader.valueAsString();
+    return text == null || text.isEmpty() ? null : OffsetTime.parse(text, formatter);
   }
 }

@@ -36,6 +36,7 @@ public class LocalDateConverter implements Converter<LocalDate> {
 
   @Override
   public LocalDate deserialize(ObjectReader reader, Context ctx) throws Exception {
-    return LocalDate.parse(reader.valueAsString(), formatter);
+    String text = reader.valueAsString();
+    return text == null || text.isEmpty() ? null : LocalDate.parse(text, formatter);
   }
 }

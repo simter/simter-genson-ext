@@ -36,6 +36,7 @@ public class YearMonthConverter implements Converter<YearMonth> {
 
   @Override
   public YearMonth deserialize(ObjectReader reader, Context ctx) throws Exception {
-    return YearMonth.parse(reader.valueAsString(), formatter);
+    String text = reader.valueAsString();
+    return text == null || text.isEmpty() ? null : YearMonth.parse(text, formatter);
   }
 }

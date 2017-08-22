@@ -36,6 +36,7 @@ public class ZonedDateTimeConverter implements Converter<ZonedDateTime> {
 
   @Override
   public ZonedDateTime deserialize(ObjectReader reader, Context ctx) throws Exception {
-    return ZonedDateTime.parse(reader.valueAsString(), formatter);
+    String text = reader.valueAsString();
+    return text == null || text.isEmpty() ? null : ZonedDateTime.parse(text, formatter);
   }
 }
