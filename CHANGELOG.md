@@ -1,4 +1,11 @@
-# [simter-genson-ext](https://github.com/simter/simter-genson-ext) changelog
+# simter-genson-ext changelog
+
+## 1.1.0 - 2019-07-02
+
+No code changed, just polishing maven config and unit test.
+
+- Use JUnit5 instead of JUnit4
+- Change parent to simter-dependencies-1.2.0
 
 ## 1.0.0 - 2019-01-08
 
