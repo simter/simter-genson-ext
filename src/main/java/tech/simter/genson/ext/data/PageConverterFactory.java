@@ -17,7 +17,6 @@ import java.lang.reflect.Type;
 @Named
 @Singleton
 public class PageConverterFactory implements Factory<Converter<Page>> {
-
   private PageConverter pageConverter;
 
   @Override
